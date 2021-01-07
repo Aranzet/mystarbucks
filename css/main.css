@@ -1,0 +1,1255 @@
+@font-face {
+    font-family: 'Geometria Regular';
+    src: url('../fonts/Geometria.otf');
+}
+
+@font-face {
+    font-family: 'Geometria Light';
+    src: url('../fonts/Geometria-Light.otf');
+}
+
+@font-face {
+    font-family: 'Geometria Bold';
+    src: url('../fonts/Geometria-Bold.otf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Geometria Regular', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    background: url(../img/bg1.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgb(33, 33, 33);
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    line-height: 50px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+header .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: #fff;
+}
+
+header img {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    width: 280px;
+    height: 75px;
+}
+
+header h1 {
+    font-size: 46px;
+    font-family: 'Geometria Bold', sans-serif;
+    text-align: center;
+}
+
+header p {
+    font-size: 32px;
+    text-align: center;
+    line-height: 50px;
+    padding-bottom: 50px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #1cb046;
+    margin: 0 auto;
+    border-radius: 100px;
+    width: 135px;
+    height: 50px;
+    padding: 0 34px;
+}
+
+header .btn p {
+    font-size: 14px;
+}
+
+.why-starbucks {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #ebebeb;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 105px;
+    font-family: 'Geometria Bold', sans-serif;
+    font-size: 36px;
+    line-height: 32px;
+}
+
+.why-starbucks .reasons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-starbucks .reason-items {
+    width: 560px;
+    margin-top: 35px;
+}
+
+.why-starbucks .reason-item {
+    display: flex;
+    padding-top: 50px;
+}
+
+.why-starbucks .reason-item:first-child {
+    padding-top: 0;
+}
+
+.why-starbucks .reason-item img {
+    width: 65px;
+    height: 65px;
+}
+
+.why-starbucks .reason-item h3 {
+    padding-left: 30px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: #22ab44;
+}
+
+.why-starbucks .reason-item p {
+    padding-left: 30px;
+}
+
+.why-starbucks .reason-photo {
+    width: 560px;
+    margin: 0 10px;
+}
+
+.why-starbucks .reason-photo img {
+    width: 100%;
+}
+
+.catalog {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.catalog .section-title {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+}
+
+.catalog .section-intro {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.catalog .starbucks-catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog .catalog-item {
+    width: 260px;
+    padding-bottom: 28px;
+    padding-top: 90px;
+}
+
+.catalog .catalog-item .img-mark {
+    position: relative;
+}
+
+.catalog .catalog-item .img-mark img {
+    width: 260px;
+    height: 250px;
+    z-index: 2;
+}
+
+.catalog .catalog-item .img-mark .mark {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ff4a4a;
+}
+
+.catalog .catalog-item .img-mark .mark p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.catalog .catalog-item .description {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Geometria Bold', sans-serif;
+}
+
+.catalog .catalog-item .description p {
+    padding-top: 36px;
+}
+
+.catalog .catalog-item .price {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Geometria Bold', sans-serif;
+}
+
+.catalog .catalog-item .price p {
+    color: #22ab44;
+    margin-top: 12px;
+    padding-bottom: 36px;
+}
+
+.catalog .catalog-item .price span {
+    color: #bdbdbd;
+    text-decoration: line-through;
+}
+
+.catalog .catalog-item .buy-now {
+    text-decoration: none;
+}
+
+.catalog .catalog-item .btn {
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.catalog .catalog-item .btn:hover {
+    background-color: #0f802f;
+}
+
+.catalog .catalog-item .btn p {
+    font-family: 'Geometria Bold', Arial, sans-serif;
+    text-align: center;
+    line-height: 35px;
+    font-size: 13px;
+}
+
+.catalog .catalog-item .more {
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 35px;
+    color: #000;
+    font-family: 'Geometria Bold', sans-serif;
+}
+
+.advantages {
+    padding: 60px 0 105px 0;
+    background-color: #f2f2f2;
+}
+
+.advantages .section-title {
+    line-height: 1.23;
+}
+
+.advantages .advantages-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages .left-advantages {
+    display: flex;
+    width: 280px;
+    text-align: right;
+    flex-wrap: wrap;
+}
+
+.advantages .left-advantages .left-advantages-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+.advantages .left-advantages .lai-description {
+    width: 215px;
+    padding-right: 20px;
+}
+
+.advantages .left-advantages .lai-description h3 {
+    font-size: 18px;
+    font-family: 'Geometria Bold', sans-serif;
+    padding-bottom: 10px;
+}
+
+.advantages .left-advantages .lai-description p {
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.advantages .left-advantages .left-advantages-item img {
+    width: 45px;
+    height: 45px;
+}
+
+.advantages .center-photo {
+    display: flex;
+    align-items: center;
+}
+
+.advantages .center-photo img {
+    width: 600px;
+    height: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.advantages .right-advantages {
+    display: flex;
+    width: 280px;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.advantages .right-advantages .right-advantages-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+
+.advantages .right-advantages .rai-description {
+    width: 215px;
+    padding-left: 20px;
+}
+
+.advantages .right-advantages .rai-description h3 {
+    font-size: 18px;
+    font-family: 'Geometria Bold', sans-serif;
+    padding-bottom: 10px;
+}
+
+.advantages .right-advantages .rai-description p {
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.advantages .right-advantages .right-advantages-item img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Галерея с увеличением картинки */
+
+.our-gallery ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.our-gallery li {
+    display: inline;
+}
+
+.our-gallery img {
+    display: inline;
+}
+
+.our-gallery .full {
+    width:100%;
+    height:100%;
+    text-align: center;
+    padding: 0px;
+  
+    transition: background-color .25s ease-in;
+    opacity: 1;
+    width:0%;
+    height:0%;
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0);
+    top:0;
+    left:0;
+}
+
+.our-gallery .full img {
+    opacity: 0;
+    height:0;
+    width:0;
+    transition: opacity .25s ease-in;
+}
+
+.our-gallery .thumbnail img {
+    width: 360px;
+    height: 360px;
+}
+
+.our-gallery .thumbnail:focus {
+    outline:none;
+}
+
+.our-gallery .thumbnail:focus + .full {
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,.8);
+ 
+}
+
+.our-gallery .thumbnail:focus + .full a img {
+    opacity:1;    
+    padding: 30px;
+    height:auto;
+    width:auto;
+    max-width:90%;
+    max-height: 90%;
+}
+
+/* Галерея с увеличением картинки */
+
+.comments {
+    padding-top: 75px;
+    padding-bottom: 30px;
+}
+
+.comments .our-comments {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments .our-comments .our-comments-item {
+    width: 360px;
+    padding-top: 50px;
+    background: #F7F7F7;
+}
+
+.comments .our-comments .our-comments-item img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: -100px;
+}
+
+.comments .our-comments .our-comments-item .comments-text {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.comments .our-comments .our-comments-item h4 {
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.comments .our-comments .our-comments-item p {
+    line-height: 1.55;
+}
+
+.comments .our-comments .our-comments-item .city {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.comments .our-comments .our-comments-item .text {
+    margin-top: 12px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.order {
+    background: url(../img/bg2.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.order .section-title {
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 0;
+}
+
+.order .section-intro {
+    color: #fff;
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.order form {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.order input {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    height: 56px;
+    padding: 0 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    width: 300px;
+}
+
+.btn-submit {
+    height: 60px;
+    width: 340px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #fff;
+    background-color: #22ab44;
+    border: none;
+}
+
+.order .order-manager {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 1.55;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.payment-and-delivery .section-title {
+    padding-top: 75px;
+    padding-bottom: 90px;
+}
+
+.payment-and-delivery .pad-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.payment-and-delivery .pad-list .pad-list-item {
+    width: 360px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+}
+
+.payment-and-delivery .pad-list .pad-list-item img {
+    padding-top: 30px;
+    padding-bottom: 85px;
+    padding-left: 30px;
+    width: 80px;
+}
+
+.payment-and-delivery .pad-list .pad-list-item h4 {
+    color: #22ab44;
+    font-size: 22px;
+    line-height: 1.35;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.payment-and-delivery .pad-list .pad-list-item p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    line-height: 1.55;
+    padding-bottom: 40px;
+}
+
+.payment-and-delivery .pad-list .pad-list-item span {
+    font-family: 'Geometria Bold', sans-serif;
+}
+
+.payment-and-delivery .pad-list .pad-list-item a {
+    text-decoration: none;
+}
+
+.payment-and-delivery .pad-list .pad-list-item .back-to-catalog {
+    font-size: 16px;
+    color: #ff8562;
+    font-family: 'Geometria Bold', sans-serif;
+}
+
+.payment-and-delivery .pad-list .pad-list-item .back-to-catalog::after {
+    content: "\00a0→";
+}
+
+.contacts {
+    background: url(../img/bg1.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.contacts .container {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts .contacts-card {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: #fff;
+    padding: 80px 85px 85px;
+    width: 760px;
+}
+
+.contacts .contacts-card .our-contacts {
+    margin-bottom: 50px;
+    font-size: 42px;
+    line-height: 1.23;
+    font-family: 'Geometria Bold', sans-serif;
+    text-align: center;
+}
+
+.contacts .contacts-card .our-contacts-text {
+    font-size: 20px;
+    line-height: 1.55;
+    text-align: center;
+}
+
+.contacts .contacts-card .our-contacts-text span {
+    font-family: 'Geometria Bold', sans-serif;
+}
+
+footer {
+    display: flex; 
+    justify-content: space-between;
+    background-color: #171717;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a p {
+    padding-right: 40px;
+}
+
+footer a p::after {
+    content: "\2191";
+}
+
+/* Popup Заказ */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    overflow: auto;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-order, .popup-item {
+    background: #fff;
+    position: relative;
+    transition: all 5s ease-in-out;
+    overflow: auto;
+}
+
+.popup-order {
+    max-width: 560px;
+    min-height: 300px;
+    margin: auto;
+    margin-top: 65px;
+}
+
+.popup-order .order-content {
+    padding: 40px;
+}
+
+.popup-order .back-to-catalog,
+.popup-item .back-to-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-order .back-to-catalog {
+    padding-bottom: 20px;
+}
+
+.popup-order .back-to-catalog p {
+    font-size: 22px;
+}
+
+.popup-order .close,
+.popup-item .close {
+    transition: all 200ms;
+    font-size: 45px;
+    line-height: 35px;
+    text-decoration: none;
+    color: #000;
+}
+
+.popup-order .close:hover,
+.popup-item .close:hover {
+    color: #555;
+}
+
+.popup-order hr {
+    margin: 0;
+}
+
+.popup-order .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.popup-order .order-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.popup-order .order-item-name,
+.all-order-price {
+    font-family: 'Geometria Bold', Arial, sans-serif;
+}
+
+.popup-order .order-item .number-goods {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.popup-order .order-item .number-goods img {
+    width: 16px;
+    height: 16px;
+}
+
+.popup-order .order-item .number-goods p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.popup-order .order-item .order-item-price {
+    width: 120px;
+    text-align: center;
+}
+
+.popup-order .order-item .delete-order-item {
+    padding-left: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.popup-order .all-order-price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: right;
+}
+
+.popup-order .your-price {
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+
+.popup-order label {
+    font-size: 16px;
+}
+
+.popup-order input {
+    padding: 0 20px;
+    width: 91%;
+    font-size: 16px;
+    line-height: 1.33;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 55px;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.popup-order .btn-submit {
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    font-family: 'Geometria Bold', Arial, sans-serif;
+}
+
+.popup-order .our-manager {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Popup Подробнее...*/
+
+.popup-item {
+    width: 100%;
+    height: 100%;
+}
+
+.popup-item .back-to-catalog {
+    padding: 12px 20px 0 20px;
+}
+
+.popup-item .close-text {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+}
+
+.popup-item .close-text::before {
+    content: "← ";
+}
+  
+.popup-item h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup-item .content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 50px 150px 50px;
+    overflow: auto;
+}
+
+.popup-item .content .popup-gallery,
+.popup-item-description {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.popup-item .content .popup-gallery img {
+    width: 100%;
+}
+
+.popup-item .content .popup-item-description h2 {
+    line-height: 1.35;
+    font-size: 22px;
+    font-family: 'Geometria Bold', Arial, sans-serif;;
+}
+
+.popup-item .content .popup-item-description .price {
+    font-size: 18px;
+    text-align: left;
+}
+
+.popup-item .content .popup-item-description .price p {
+    padding-bottom: 20px;
+}
+
+.popup-item .content .popup-item-description .buy-now .btn {
+    margin: 0;
+    height: 45px;
+    padding: 0 30px;
+}
+
+.popup-item .content .popup-item-description .buy-now .btn p {
+    line-height: 45px;
+}
+
+.popup-item .content .popup-item-description .item-description {
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+/* Адаптивность */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    header .container {
+        padding-top: 130px;
+        padding-bottom: 110px;
+    }
+    .why-starbucks .reason-items {
+        margin-top: 0;
+    }
+    .why-starbucks .reason-photo {
+        margin-top: 40px;
+    }
+    .catalog .catalog-item {
+        width: 220px;
+    }
+    .catalog .catalog-item .img-mark img {
+        width: 240px;
+    }
+    .advantages .left-advantages .lai-description {
+        width: 155px;
+    }
+    .advantages .center-photo img {
+        width: 420px;
+        height: 420px;
+    }
+    .advantages .right-advantages .rai-description {
+        width: 155px;
+    }
+    .our-gallery .thumbnail img {
+        width: 256px;
+        height: 256px;
+    }
+    .comments .our-comments .our-comments-item {
+        width: 300px;
+    }
+    .comments .our-comments .our-comments-item .comments-text {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: auto;
+    }
+    .order input {
+        width: 220px;
+    }
+    .order form .btn-submit {
+        width: 315px;
+    }
+    .payment-and-delivery .pad-list .pad-list-item {
+        width: 300px;
+    }
+    .contacts .contacts-card {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        width: 450px;
+    }
+    .popup-item .content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    header .container {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    header p {
+        padding-bottom: 30px;
+    }
+    .why-starbucks .reasons {
+        justify-content: center;
+    }
+    .why-starbucks .section-title {
+        padding-bottom: 80px;
+    }
+    .why-starbucks .reason-photo {
+        display: none;
+    }
+    .advantages .advantages-column {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .advantages .left-advantages {
+        width: 600px;
+        flex-wrap: wrap;
+    }
+    .advantages .left-advantages .left-advantages-item {
+        width: 600px;
+        align-items: center;
+    }
+    .advantages .left-advantages .lai-description {
+        width: 535px;
+        text-align: left;
+        order: 1;
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    .section-title {
+        padding-bottom: 0;
+    }
+    .advantages .center-photo img {
+        padding-top: 45px;
+    }
+    .advantages .right-advantages {
+        width: 600px;
+    }
+    .advantages .right-advantages .right-advantages-item {
+        width: 600px;
+        align-items: center;
+    }
+    .advantages .right-advantages .rai-description {
+        width: 535px;
+        text-align: left;
+    }
+    .our-gallery .thumbnail img {
+        width: 192px;
+        height: 192px;
+    }
+    .comments .our-comments {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .comments .our-comments .our-comments-item {
+        width: 540px;
+        margin-top: 100px;
+    }
+    .order .section-intro {
+        font-size: 22px;
+    }
+    .order form {
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+    .order input {
+        width: 600px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .order form .btn-submit {
+        width: 640px;
+    }
+    .order .order-manager {
+        margin-top: 10px;
+    }
+    .payment-and-delivery .pad-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .payment-and-delivery .pad-list .pad-list-item {
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .payment-and-delivery .pad-list .pad-list-item:last-child {
+        margin-bottom: 0;
+    }
+    .contacts .contacts-card {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .popup-item .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    header {
+        background-size: cover;
+    }
+    nav {
+        display: none;
+    }
+    header h1 {
+        font-size: 38px;
+    }
+    header p br {
+        display: none;
+    }
+    .advantages .left-advantages {
+        width: 440px;
+    }
+    .advantages .left-advantages .left-advantages-item {
+        width: 440px;
+    }
+    .advantages .right-advantages {
+        width: 440px;
+    }
+    .advantages .right-advantages .right-advantages-item {
+        width: 440px;
+    }
+    .our-gallery .thumbnail img {
+        width: 285px;
+        height: 285px;
+    }
+    .comments .our-comments .our-comments-item {
+        width: 500px;
+    }
+    .order {
+        background-size: cover;
+    }
+    .order input {
+        width: 400px;
+    }
+    .order form .btn-submit {
+        width: 440px;
+    }
+    .payment-and-delivery .pad-list .pad-list-item {
+        width: 500px;
+    }
+    .contacts {
+        background-size: cover;
+    }
+    .contacts .contacts-card {
+        padding: 40px 0px 45px;
+    }
+    .popup-item .content {
+        flex-wrap: wrap;
+    }
+    .popup-item .content .popup-gallery {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .popup-item-description {
+        width: 100%;
+    }
+    .popup-item .content .popup-item-description .buy-now .btn {
+        width: 88%;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    header h1 {
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+    header p {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    header .btn p {
+        line-height: 50px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .catalog .section-intro br {
+        display: none;
+    }
+    .catalog .starbucks-catalog {
+        justify-content: center;
+    }
+    .catalog .catalog-item {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+    .catalog .catalog-item:last-child {
+        padding-bottom: 28px;
+    }
+    .advantages .left-advantages {
+        width: 280px;
+    }
+    .advantages .left-advantages .left-advantages-item {
+        width: 280px;
+    }
+    .advantages .center-photo img {
+        width: 250px;
+        height: 250px;
+    }
+    .advantages .right-advantages {
+        width: 280px;
+    }
+    .advantages .right-advantages .right-advantages-item {
+        width: 280px;
+    }
+    .our-gallery .thumbnail img {
+        width: 160px;
+        height: 160px;
+    }
+    .comments .our-comments .our-comments-item h4 {
+        font-size: 12px;
+    }
+    .comments .our-comments .our-comments-item .city {
+        font-size: 12px;
+    }
+    .comments .our-comments .our-comments-item .text {
+        font-size: 12px;
+    }
+    .order .section-intro {
+        font-size: 18px;
+    }
+    .order .section-intro br {
+        display: none;
+    }
+    .payment-and-delivery .pad-list .pad-list-item img {
+        padding-bottom: 45px;
+    }
+    .contacts .contacts-card .our-contacts {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .contacts .contacts-card .our-contacts-text {
+        font-size: 16px;
+    }
+    .popup-order .order-item {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .popup-order .order-item img {
+        padding-top: 10px;
+    }
+    .popup-order .order-item-name {
+        padding: 10px 0;
+    }
+    .popup-order .order-item .order-item-price {
+        width: 80px;
+    }
+    .popup-order input {
+        width: 82%;
+    }
+    .popup-item .content .popup-item-description .buy-now .btn {
+        width: 77%;
+    }
